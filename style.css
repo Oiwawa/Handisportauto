@@ -1,0 +1,245 @@
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.pictures img {
+  height: 100vh;
+  width: 80%;
+  padding: 3px;
+  border: 10px solid #fd8b01
+}
+
+
+/* NAV BAR */
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: sticky;
+}
+
+#ham-menu {
+  display: none;
+}
+
+label[for="ham-menu"] {
+  display: block;
+  position: fixed;
+  top: 24px;
+  left: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  border: 2px solid #fd8b01;
+}
+
+.ham-menu {
+  background-color: #042331;
+  width: 35%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  transform: translate(-110%);
+  z-index: 998;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+}
+
+.ham-menu > ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  margin: 0 21%;
+  padding: 0;
+  height: 50%;
+}
+
+.ham-menu > ul > li > a {
+  font-size: 25px;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  color: #fd8b01;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Underline */
+
+.ham-menu > ul > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  padding: 0 !important;
+  background-color: #fd8b01;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.ham-menu > ul > li > a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.ham-menu > ul > li > a:hover::after,
+.ham-menu > ul > li > a:focus::after{
+  transform: scale(1);
+}
+
+#ham-menu:checked + label {
+  background-color: transparent;
+  border-color: #fd8b01;
+}
+#ham-menu:checked ~ div.ham-menu {
+  transform: translate(0px);
+  visibility: visible;
+}
+
+[for="ham-menu"] > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.menu-line {
+  display: block;
+  width: 17px;
+  height: 2px;
+  margin: 10px 0 5px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: #fd8b01;
+  transition: 500ms;
+  transform-origin: right center;
+}
+
+
+/* Icon */
+
+[for="ham-menu"] > div > span:nth-child(4),
+[for="ham-menu"] > div > span:nth-child(5),
+[for="ham-menu"] > div > span:nth-child(6) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  transform-origin: left center;
+}
+
+#ham-menu:checked + label span {
+  background-color: #fd8b01;
+}
+
+#ham-menu:checked + label span:nth-child(2),
+#ham-menu:checked + label span:nth-child(5) {
+  transform: scale(0);
+}
+
+#ham-menu:checked + label span:nth-child(1) {
+  transform: translateY(17px) rotate(45deg);
+}
+
+#ham-menu:checked + label span:nth-child(4) {
+  transform: translateY(17px) rotate(-45deg);
+}
+
+#ham-menu:checked + label span:nth-child(3) {
+  transform: translateY(-17px) rotate(-45deg);
+}
+
+#ham-menu:checked + label span:nth-child(6) {
+  transform: translateY(-17px) rotate(45deg);
+}
+
+.ham-menu a {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  display: inline;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.ham-menu a::after {
+  content: "\e806";
+  display: inline-block;
+  font-family: fontello;
+  padding: 5px;
+  font-size: 1.6rem;
+  transform: rotate(-90deg);
+}
+
+
+/* BODY */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 2.5rem;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  color: #000;
+  padding: 10px;
+}
+
+.heading {
+  font-size: 6rem;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  font-family: "Patua One";
+}
+
+
+
