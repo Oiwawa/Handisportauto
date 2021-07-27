@@ -11,23 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* HEADER */
-
-header {
-  text-align: center;
-  height: 100vh;
-  background-size: cover;
-}
-
-.pictures img {
-  height: 100vh;
-  width: 80%;
-  padding: 3px;
-  border: 10px solid #fd8b01
-}
 
 
-/* NAV BAR */
+/* SIDE NAV BAR */
 
 .sidebar {
   height: 100%;
@@ -38,6 +24,7 @@ header {
 #ham-menu {
   display: none;
 }
+
 
 label[for="ham-menu"] {
   display: block;
@@ -53,7 +40,7 @@ label[for="ham-menu"] {
 
 .ham-menu {
   background-color: #042331;
-  width: 35%;
+  width: 20%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -61,7 +48,6 @@ label[for="ham-menu"] {
   transform: translate(-110%);
   z-index: 998;
   transition: 1s;
-  display: flex;
   align-items: center;
 }
 
@@ -69,9 +55,10 @@ label[for="ham-menu"] {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
-  margin: 0 21%;
+  margin: 40% 21%;
   padding: 0;
   height: 50%;
+  
 }
 
 .ham-menu > ul > li > a {
@@ -178,7 +165,7 @@ label[for="ham-menu"] {
   transform: translateY(-17px) rotate(45deg);
 }
 
-.ham-menu a {
+.ham-menu ul a {
   font-size: 1.6rem;
   line-height: 1.5em;
   word-spacing: 0.5em;
@@ -189,7 +176,7 @@ label[for="ham-menu"] {
   padding: 7px;
 }
 
-.ham-menu a::after {
+.ham-menu ul a::after {
   content: "\e806";
   display: inline-block;
   font-family: fontello;
@@ -198,7 +185,23 @@ label[for="ham-menu"] {
   transform: rotate(-90deg);
 }
 
+.ham-footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50% 0 0 0;
+  padding: 0;
+  height: 50%;
+}
 
+.ham-footer img {
+  width: 64px;
+  padding: 3px;
+}
+
+.ham-footer img:hover {
+  width: 70px;
+  transition: 0.5s ease;
+}
 /* BODY */
 
 body {
@@ -211,7 +214,7 @@ body {
 
 h2, h3 {
   font-family: 'Roboto Mono', sans-serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -241,5 +244,64 @@ h2, h3 {
   font-family: "Patua One";
 }
 
+/* HEADER */
+
+header {
+  text-align: center;
+  background-size: cover;
+  background-image: url("media/Accueil.jpg");
+  overflow: hidden;
+  background-size: cover;
+
+  min-width: 1150px;
+	box-shadow:
+		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12)
+		;
+    height: 100vh;
+}
 
 
+
+/* ACCUEIL */
+#accueil {
+  margin: auto 0;
+}
+
+.logo {
+ height: 20%;
+}
+
+.logo img {
+  width: 550px;
+}
+
+#line {
+  border-bottom: 10px solid #fd8b01;
+}
+
+.presentation {
+  display: block;
+  margin: 2% 0 3% 0;
+  border: 3px solid #e4e2e2;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 0 5% 0 5%;
+  text-align: center;
+}
+
+.presentation p {
+  font-size: 1.3em;
+}
+
+.presentation p:nth-child(4){
+  margin-left: 20%;
+}
+
+.presentation p:nth-child(5){
+  margin-left: 20%;
+}
