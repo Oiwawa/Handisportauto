@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  list-style: none;
   text-decoration: none !important;
 }
 
@@ -49,6 +48,7 @@ label[for="ham-menu"] {
   z-index: 998;
   transition: 1s;
   align-items: center;
+  cursor: pointer;
 }
 
 .ham-menu > ul {
@@ -252,28 +252,35 @@ header {
   background-image: url("media/Accueil.jpg");
   overflow: hidden;
   background-size: cover;
-
   min-width: 1150px;
-	box-shadow:
-		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-		0 12.5px 10px rgba(0, 0, 0, 0.06),
-		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-		0 100px 80px rgba(0, 0, 0, 0.12)
-		;
-    height: 100vh;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  height: 100vh;
 }
 
-
+/* .bg_image {
+  opacity: 0.7;
+} */
 
 /* ACCUEIL */
 #accueil {
-  margin: auto 0;
+  padding: 5% 10%;
+}
+
+#accueil h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 3em;
 }
 
 .logo {
- height: 20%;
+  height: 20%;
 }
 
 .logo img {
@@ -285,23 +292,35 @@ header {
 }
 
 .presentation {
-  display: block;
-  margin: 2% 0 3% 0;
-  border: 3px solid #e4e2e2;
+  margin-top: 5%;
   text-align: center;
-  font-size: 1.8em;
-  padding: 0 5% 0 5%;
-  text-align: center;
+  font-size: 1.9em;
 }
 
-.presentation p {
-  font-size: 1.3em;
+#form-event {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-around;
 }
 
-.presentation p:nth-child(4){
-  margin-left: 20%;
+.formateurs {
+  width: 50%;
 }
 
-.presentation p:nth-child(5){
-  margin-left: 20%;
+.formateurs li {
+  list-style: none;
 }
+
+.formateurs li::before {
+  content: "\01F697";
+}
+
+.formateurs p{
+  font-size: 0.8em;
+}
+
+footer {
+  background-color: #fd8b01;
+  height: 300px;
+}
+
