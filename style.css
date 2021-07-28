@@ -58,7 +58,7 @@ label[for="ham-menu"] {
   margin: 40% 21%;
   padding: 0;
   height: 50%;
-  
+  list-style: none;
 }
 
 .ham-menu > ul > li > a {
