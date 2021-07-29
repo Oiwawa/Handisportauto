@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a:visited {
+  text-decoration: none;
+  color: #e2e2e2;
+}
 
 
 /* SIDE NAV BAR */
@@ -281,7 +285,7 @@ h2, h3 {
   0 100px 80px rgba(0, 0, 0, 0.12)
   ;
   height: 100vh;
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: 2;
 }
 
@@ -301,16 +305,57 @@ h2, h3 {
   height: 20%;
   z-index: 1;
   position: absolute;
-  left: 505px;
 }
 
 .logo img {
+  margin: 0 auto;
   width: 550px;
 }
 
 #line {
   border-bottom: 10px solid #fd8b01;
 }
+/* ************************ MID NAV ****************************** */
+.container {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 50%;
+  opacity: 1 !important;
+  z-index: 1;
+}
+
+.container-nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 17% 8% 17% 8%;
+}
+
+.nav-1, .nav-2 {
+  height: 300px;
+  width: 350px;
+  border: 3px solid #fd8b01;
+  background-color: #222222b8;
+  color: #e2e2e2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none !important;
+  
+}
+
+.container-nav p {
+  margin: 30% 0;
+}
+
+.nav-1:hover, .nav-2:hover{
+  height: 310px;
+  width: 360px;
+  transition: 0.5s ease-in-out;
+}
+
+
 
 /* ************************* ACCUEIL ************************* */
 .presentation {
@@ -341,30 +386,6 @@ h2, h3 {
   font-size: 0.8em;
 }
 
-.container {
-  position: absolute;
-  left: 505px;
-  top: 300px;
-  width: 500px;
-  opacity: 1 !important;
-  z-index: 1;
-}
-
-.container-nav {
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  
-}
-
-.nav-1, .nav-2 {
-  padding: 20%;
-  border: 3px solid #fd8b01;
-  background-color: #222222b8;
-  color: #e2e2e2;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
 
 
 
