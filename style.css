@@ -52,9 +52,11 @@ label[for="ham-menu"] {
   z-index: 998;
   transition: 1s;
   align-items: center;
-  cursor: pointer;
 }
 
+.sidebar label:hover{
+  cursor: pointer;
+}
 .ham-menu > ul {
   display: flex;
   flex-flow: column nowrap;
@@ -305,10 +307,10 @@ h2, h3 {
   height: 20%;
   z-index: 1;
   position: absolute;
+  margin: 0 34%;
 }
 
 .logo img {
-  margin: 0 auto;
   width: 550px;
 }
 
@@ -328,8 +330,15 @@ h2, h3 {
 .container-nav {
   margin: auto;
   display: flex;
+  width: 50%;
+  height: 50%;
   justify-content: space-around;
-  padding: 17% 8% 17% 8%;
+  padding: 17% 5% 17% 8%;
+  gap: 8%;
+}
+
+.container-nav p {
+  margin: 30% 0;
 }
 
 .nav-1, .nav-2 {
@@ -342,11 +351,6 @@ h2, h3 {
   font-size: 3em;
   text-align: center;
   text-decoration: none !important;
-  
-}
-
-.container-nav p {
-  margin: 30% 0;
 }
 
 .nav-1:hover, .nav-2:hover{
@@ -354,7 +358,6 @@ h2, h3 {
   width: 360px;
   transition: 0.5s ease-in-out;
 }
-
 
 
 /* ************************* ACCUEIL ************************* */
@@ -385,8 +388,6 @@ h2, h3 {
 .formateurs p{
   font-size: 0.8em;
 }
-
-
 
 
 
