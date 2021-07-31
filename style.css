@@ -1,6 +1,5 @@
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*{
   padding: 0;
   margin: 0;
   text-decoration: none !important;
@@ -32,13 +31,13 @@ a:visited {
 label[for="ham-menu"] {
   display: block;
   position: fixed;
-  top: 24px;
-  left: 20px;
+  top: 55px;
+  left: 38px;
   z-index: 999;
   width: 60px;
   height: 60px;
   border-radius: 15px;
-  border: 2px solid #fd8b01;
+  border: 5px solid #fd8b01;
 }
 
 .ham-menu {
@@ -124,8 +123,8 @@ label[for="ham-menu"] {
 
 .menu-line {
   display: block;
-  width: 17px;
-  height: 2px;
+  width: 19px;
+  height: 4px;
   margin: 10px 0 5px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -256,7 +255,7 @@ h2, h3 {
 .accueil_image {
   text-align: center;
   background-size: cover;
-  background-image: url("media/Accueil.jpg");
+  background-image: url("media/voit3c.jpg");
   overflow: hidden;
   background-size: cover;
   min-width: 1150px;
@@ -274,7 +273,7 @@ h2, h3 {
 .bg_image {
   text-align: center;
   background-size: cover;
-  background-image: url("media/Accueil.jpg");
+  background-image: url("media/voit3c.jpg");
   overflow: hidden;
   background-size: cover;
   min-width: 1150px;
@@ -362,9 +361,25 @@ h2, h3 {
 
 /* ************************* ACCUEIL ************************* */
 .presentation {
-  margin-top: 5%;
+  margin: 5% -75px 5% -75px;
   text-align: center;
   font-size: 1.9em;
+  display: flex;
+  background-color: #fffbfb;
+  border: 2px solid #fd8b01;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.presentation img {
+  width: 590px;
+}
+.presentation p {
+  padding: 0 2% 0 3%;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 2;
 }
 
 #form-event {
@@ -393,7 +408,11 @@ h2, h3 {
 
 /* ******************* FOOTER ************************ */
 footer {
-  background-color: #fd8b01;
+  border-top: 5px solid #fd8b01;
+  background-color: #042331;
   height: 300px;
+  opacity: 0.9;
+  color: #fffbfb;
+  display: flex;
 }
 

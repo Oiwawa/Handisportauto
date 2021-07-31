@@ -1,0 +1,36 @@
+.stage {
+    margin: 5%;
+}
+
+.stage h1 {
+    margin-bottom: 5%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.stage h2 {
+    margin-bottom: 2%;
+}
+
+.stage p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.objectif-stage {
+    font-size: 1.7em;
+    line-height: 200%;
+}
+
+.objectif-stage a {
+    color: #0e7caf;
+    text-decoration: underline !important;
+}
+
+.access {
+    font-size: 2em;
+}
+
+.access br {
+    margin: 2% 0 2% 0;
+}
