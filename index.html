@@ -63,42 +63,65 @@
         <div class="presentation">
             <img src="/media/5.jpg"> 
             <p>
-                Stages de découverte du pilotage sur circuit accessibles aux personnes à mobilité réduite.</strong>
+                Stages de découverte du pilotage sur circuit <strong>accessibles aux personnes à mobilité réduite.</strong>
                 Spécialisé dans la formation, l’initiation et le perfectionnement au pilotage automobile auprès des entreprises et des particuliers.
             </p>
         </div>
         <div id="form-event">
             <div class="formateurs">
+                <h4>Activités</h4>
+                <p>
+                    Pouvant s’effectuer à bord de véhicules équipés et adaptés à certains handicaps (accélérateur au volant, frein à main, accélérateur au pied gauche).
+                </p>
+                <div class="row">
+                    <div class="column">
+                      <img src="media/volant1.jpg" alt="Volant adaptable" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="media/3.jpg" alt="Porsche Handisportauto" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="media/tableaubord.jpg" alt="Tableau de bord adaptable" onclick="myFunction(this);">
+                    </div>
+                </div>
+                  <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                  </div>
+                <p>
+                    Stages assurés par des instructeurs diplômés d’Etat
+                    Tous nos stages de pilotage sont encadrés par des instructeurs titulaires du Brevet Professionnel Jeunesse Education Populaire du Sport – Spécialité auto (BP JEPS) ou du Brevet pour l’Exercice de la profession d’Enseignant de la Conduite Automobile et de la Sécurité Routière (BEPECASER).
+                </p>
+            </div>
+            
+            <div class="autres-event">
+                <h5>Handisportauto c'est aussi: </h5>
                 <ul>
-                    <h4>Activités</h4>
-                        <li>
-                            Pouvant s’effectuer à bord de véhicules équipés et adaptés à certains handicaps (accélérateur au volant, frein à main, accélérateur au pied gauche).
-                        </li>
-                        <li>
-                            Stages assurés par des instructeurs diplômés d’Etat
-                        </li>
-                    </ul>
-                    <p>
-                        Tous nos stages de pilotage sont encadrés par des instructeurs titulaires du Brevet Professionnel Jeunesse Education Populaire du Sport – Spécialité auto (BP JEPS) ou du Brevet pour l’Exercice de la profession d’Enseignant de la Conduite Automobile et de la Sécurité Routière (BEPECASER).
-                    </p>
-                </div>
-                <div class="autres-event">
-                    <h5>Handisportauto c'est aussi: </h5>
-                    <ul>
-                        <li>La création de journée événement</li>
-                        <li>L'éducation routière pour TOUS les enfants (de 6 à 13 ans)</li>
-                        <li>La formation aux risques routiers</li>
-                    </ul>
-                </div>
+                    <li>La création de journée événement</li>
+                    <li>L'éducation routière pour TOUS les enfants (de 6 à 13 ans)</li>
+                    <li>La formation aux risques routiers</li>
+                </ul>
             </div>
-        </section>
-        <footer>
-            <div class="sponsors">
+        </div>
+    </section>
+    <footer>
+        <div class="sponsors">
+            
+        </div>
+        <div>
+            <p>Handisportauto &copy;</p>
+        </div>
+    </footer>
 
-            </div>
-            <div>
-                <p>Handisportauto &copy;</p>
-            </div>
-        </footer>
-    </body>
-    </html>
+    <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+</body>
+</html>
