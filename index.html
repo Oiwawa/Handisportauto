@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handisportauto</title>
     <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header class="accueil_image">
@@ -58,15 +60,18 @@
         </div>
     </header>
     <section id="accueil">
-        <h2>Handisportauto <br> le pilotage sur circuit  pour tous</h2>
-        <div id="line"></div>
-        <div class="presentation">
-            <img src="/media/5.jpg"> 
-            <p>
-                Stages de découverte du pilotage sur circuit <strong>accessibles aux personnes à mobilité réduite.</strong>
-                Spécialisé dans la formation, l’initiation et le perfectionnement au pilotage automobile auprès des entreprises et des particuliers.
+        <div data-aos="fade-up"
+        data-aos-duration="1000">
+     <h2>Handisportauto <br> le pilotage sur circuit  pour tous</h2>
+     <div id="line"></div>
+     <div class="presentation">
+         <img src="/media/5.jpg"> 
+         <p>
+             Stages de découverte du pilotage sur circuit <strong>accessibles aux personnes à mobilité réduite.</strong>
+             Spécialisé dans la formation, l’initiation et le perfectionnement au pilotage automobile auprès des entreprises et des particuliers.
             </p>
         </div>
+    </div>
         <div id="form-event">
             <div class="formateurs">
                 <h4>Activités</h4>
@@ -75,20 +80,20 @@
                 </p>
                 <div class="row">
                     <div class="column">
-                      <img src="media/volant1.jpg" alt="Volant adaptable" onclick="myFunction(this);">
+                        <img src="media/volant1.jpg" alt="Volant adaptable" onclick="myFunction(this);">
                     </div>
                     <div class="column">
                         <img src="media/3.jpg" alt="Porsche Handisportauto" onclick="myFunction(this);">
                     </div>
                     <div class="column">
-                      <img src="media/tableaubord.jpg" alt="Tableau de bord adaptable" onclick="myFunction(this);">
+                        <img src="media/tableaubord.jpg" alt="Tableau de bord adaptable" onclick="myFunction(this);">
                     </div>
                 </div>
-                  <div class="container">
+                <div class="container">
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
                     <img id="expandedImg" style="width:100%">
                     <div id="imgtext"></div>
-                  </div>
+                </div>
                 <p>
                     Stages assurés par des instructeurs diplômés d’Etat
                     Tous nos stages de pilotage sont encadrés par des instructeurs titulaires du Brevet Professionnel Jeunesse Education Populaire du Sport – Spécialité auto (BP JEPS) ou du Brevet pour l’Exercice de la profession d’Enseignant de la Conduite Automobile et de la Sécurité Routière (BEPECASER).
@@ -96,12 +101,18 @@
             </div>
             
             <div class="autres-event">
-                <h5>Handisportauto c'est aussi: </h5>
-                <ul>
-                    <li>La création de journée événement</li>
-                    <li>L'éducation routière pour TOUS les enfants (de 6 à 13 ans)</li>
-                    <li>La formation aux risques routiers</li>
-                </ul>
+                <h3>Handisportauto c'est aussi: </h3>
+                <p class="event_left"><img src="/media/6.jpg" alt="Evenement Porsche">
+                    La création de journée événement
+                </p>
+                <p class="event_right">
+                    L'éducation routière pour TOUS les enfants (de 6 à 13 ans)
+                    <img src="/media/6.jpg">
+                </p>
+                <p class="event_left"><img src="/media/6.jpg">
+                    La formation aux risques routiers
+                </p>
+                
             </div>
         </div>
     </section>
@@ -113,15 +124,17 @@
             <p>Handisportauto &copy;</p>
         </div>
     </footer>
-
+    
     <script>
         function myFunction(imgs) {
-          var expandImg = document.getElementById("expandedImg");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
         }
-        </script>
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

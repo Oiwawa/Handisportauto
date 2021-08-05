@@ -361,7 +361,7 @@ h2, h3 {
 
 /* ************************* ACCUEIL ************************* */
 .presentation {
-  margin: 6% 3% 5% 5%;
+  margin: 6% 5% 5% 9%;
   text-align: center;
   font-size: 1.9em;
   display: flex;
@@ -408,6 +408,10 @@ h2, h3 {
   margin: 2% 0 2% 0;
 }
 
+.row {
+  margin: 0 auto;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -440,8 +444,12 @@ h2, h3 {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: white;
-  font-size: 20px;
+  color: #fd8b01;
+  font-size: 45px;
+  background-color: #042331;
+  border: 2px solid #fd8b01;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .closebtn {
@@ -449,13 +457,44 @@ h2, h3 {
   top: 10px;
   right: 15px;
   color: white;
-  font-size: 35px;
+  font-size: 65px;
   cursor: pointer;
 }
 
 
 .autres-event {
   margin: 5% 0 2% 5% ;
+}
+
+.autres-event h3 {
+font-size: 1.6em;
+margin: 0 5% 2% 5%;
+}
+
+.autres-event p {
+  margin: 0 5% 5% 5%;
+  background-color: #f0f0f0 !important;
+  font-family: monospace;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.autres-event img {
+  width: 500px;
+  max-width: 500px;
+  min-width: 350px;
+  margin-right: 5px ;
+  padding-right: 7px ;
+}
+
+.event_left {
+  text-align: left;
+}
+
+.event_right {
+  text-align: right;
 }
 /* ******************* FOOTER ************************ */
 footer {
